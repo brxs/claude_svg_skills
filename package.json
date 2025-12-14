@@ -1,0 +1,18 @@
+{
+  "name": "claude-svg-skills",
+  "version": "1.0.0",
+  "description": "SVG geometric art generation with Claude Code skills",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "example:basic": "node examples/basic-shapes.js",
+    "example:grid": "node examples/grid-pattern.js",
+    "example:circles": "node examples/concentric-circles.js"
+  },
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.2.4",
+    "opentype.js": "^1.3.4",
+    "sharp": "^0.34.5",
+    "svgdom": "^0.1.19"
+  }
+}
