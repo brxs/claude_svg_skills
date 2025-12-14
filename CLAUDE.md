@@ -556,3 +556,28 @@ const color = randomFromPalette('bauhaus');
 - Save all output to `output/` directory
 - Skills are at `.claude/skills/<name>/index.js`
 - Each skill has a `SKILL.md` with detailed documentation
+
+## Working with Claude Code
+
+**Prefer skills over scripts** - When creating SVG art, use the CLI skills instead of writing JavaScript files. This enables:
+
+- **Interactive iteration** - Adjust parameters and see results immediately
+- **Composable workflow** - Chain skills together for complex effects
+- **Easier experimentation** - Try different values without editing code
+- **Visual feedback loop** - Render after each step to check progress
+
+Example iterative workflow:
+```bash
+# Create and iterate
+node .claude/skills/init-canvas/index.js output/art.svg 400 400
+node .claude/skills/add-circle/index.js output/art.svg 200 200 80 fill=#E53935
+node .claude/skills/render-svg/index.js output/art.svg
+
+# Not happy with the color? Just run again
+node .claude/skills/edit-element/index.js output/art.svg circle fill "#1E88E5"
+node .claude/skills/render-svg/index.js output/art.svg
+
+# Add more elements, adjust, repeat
+```
+
+Only write scripts when you need programmatic logic (loops, randomization, calculations).
