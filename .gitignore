@@ -2,8 +2,6 @@
 node_modules/
 
 # Generated output
-output/*.svg
-output/*.png
 
 # OS files
 .DS_Store

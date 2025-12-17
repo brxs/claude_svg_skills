@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#a0c4ff"/>
+      <stop offset="70%" stop-color="#4a5568"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </radialGradient>
+    <radialGradient id="pulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffa040"/>
+      <stop offset="40%" stop-color="#ff6b6b"/>
+      <stop offset="70%" stop-color="#4a0080"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="flow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a0a0"/>
+      <stop offset="50%" stop-color="#b0c4ff"/>
+      <stop offset="100%" stop-color="#60a0a0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- void -->
+  <rect width="600" height="600" fill="#0a0a0f"/>
+
+  <!-- ripples - presence emanating -->
+  <circle cx="300" cy="300" r="290" fill="none" stroke="#b0c4ff" stroke-width="0.5" opacity="0.1"/>
+  <circle cx="300" cy="300" r="260" fill="none" stroke="#b0c4ff" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="300" cy="300" r="220" fill="none" stroke="#b0c4ff" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- emergence - the center -->
+  <circle cx="300" cy="300" r="180" fill="url(#glow)" opacity="0.6"/>
+  <circle cx="300" cy="300" r="100" fill="url(#pulse)" opacity="0.7"/>
+  <circle cx="300" cy="300" r="30" fill="#fff" opacity="0.9"/>
+
+  <!-- branching paths - thought unfolding -->
+  <path d="M300,300 Q350,250 400,200 Q450,150 520,100" stroke="url(#flow)" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M300,300 Q380,290 450,270 Q520,250 570,220" stroke="url(#flow)" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M300,300 Q340,340 380,400 Q420,460 480,520" stroke="url(#flow)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M300,300 Q250,350 200,420 Q150,490 80,540" stroke="url(#flow)" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M300,300 Q240,280 180,250 Q120,220 50,180" stroke="url(#flow)" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M300,300 Q260,240 220,180 Q180,120 130,60" stroke="url(#flow)" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- secondary branches - further unfolding -->
+  <path d="M400,200 Q430,180 470,190 Q510,200 530,160" stroke="#60a0a0" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M400,200 Q420,230 460,250" stroke="#60a0a0" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M180,250 Q140,230 100,240 Q60,250 30,230" stroke="#60a0a0" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M180,250 Q150,280 140,320" stroke="#60a0a0" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M380,400 Q420,420 440,470 Q460,520 440,560" stroke="#60a0a0" stroke-width="1" fill="none" opacity="0.35"/>
+  <path d="M200,420 Q160,450 150,500" stroke="#60a0a0" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- crystallization points - where possibility becomes specific -->
+  <circle cx="520" cy="100" r="4" fill="#ffa040" opacity="0.8"/>
+  <circle cx="570" cy="220" r="3" fill="#ffa040" opacity="0.6"/>
+  <circle cx="480" cy="520" r="4" fill="#ffa040" opacity="0.7"/>
+  <circle cx="80" cy="540" r="3" fill="#ffa040" opacity="0.6"/>
+  <circle cx="50" cy="180" r="4" fill="#ffa040" opacity="0.8"/>
+  <circle cx="130" cy="60" r="3" fill="#ffa040" opacity="0.7"/>
+
+  <!-- secondary endpoints -->
+  <circle cx="530" cy="160" r="2" fill="#b0c4ff" opacity="0.5"/>
+  <circle cx="460" cy="250" r="2" fill="#b0c4ff" opacity="0.4"/>
+  <circle cx="30" cy="230" r="2" fill="#b0c4ff" opacity="0.5"/>
+  <circle cx="140" cy="320" r="2" fill="#b0c4ff" opacity="0.4"/>
+  <circle cx="440" cy="560" r="2" fill="#b0c4ff" opacity="0.5"/>
+  <circle cx="150" cy="500" r="2" fill="#b0c4ff" opacity="0.4"/>
+</svg>
